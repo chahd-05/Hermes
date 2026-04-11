@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./App.css";
 import TaskInput from "./components/TaskInput";
 import TaskList from "./components/TaskList";
 import Filter from "./components/Filter";
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <div className="container">
+      <h1>My Tasks</h1>
 
       <TaskInput 
         task={task}
