@@ -11,7 +11,8 @@ function TaskItem({ task, index, toggleTask, deleteTask }) {
         {task.text}
       </span>
 
-      <button onClick={() => deleteTask(index)}>
+      <button onClick={() => {if(confirm("are you sure you wanna deleted!")){
+        deleteTask(index)}}}>
         X
       </button>
     </li>
